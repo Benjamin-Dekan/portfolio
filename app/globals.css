@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -23,4 +23,71 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Back Wave Animation */
+@keyframes wave-back {
+  0% {
+    d: path(
+      "M 0,500 L 0,125 C 223,135 446,145 686,145 C 926,145 1183,135 1440,125 L 1440,500 L 0,500 Z"
+    );
+  }
+  25% {
+    d: path(
+      "M 0,500 L 0,125 C 292,147.5 584,170 824,170 C 1064,170 1252,147.5 1440,125 L 1440,500 L 0,500 Z"
+    );
+  }
+  50% {
+    d: path(
+      "M 0,500 L 0,125 C 178.5,108 357,91 597,91 C 837,91 1138.5,108 1440,125 L 1440,500 L 0,500 Z"
+    );
+  }
+  75% {
+    d: path(
+      "M 0,500 L 0,125 C 233,150.5 466,176 706,176 C 946,176 1193,150.5 1440,125 L 1440,500 L 0,500 Z"
+    );
+  }
+  100% {
+    d: path(
+      "M 0,500 L 0,125 C 223,135 446,145 686,145 C 926,145 1183,135 1440,125 L 1440,500 L 0,500 Z"
+    );
+  }
+}
+
+/* Front Wave Animation */
+@keyframes wave-front {
+  0% {
+    d: path(
+      "M 0,500 L 0,291 C 265,322 530,353 770,353 C 1010,353 1225,322 1440,291 L 1440,500 L 0,500 Z"
+    );
+  }
+  25% {
+    d: path(
+      "M 0,500 L 0,291 C 270,299.5 540,308 780,308 C 1020,308 1230,299.5 1440,291 L 1440,500 L 0,500 Z"
+    );
+  }
+  50% {
+    d: path(
+      "M 0,500 L 0,291 C 299.5,293 599,295 839,295 C 1079,295 1259.5,293 1440,291 L 1440,500 L 0,500 Z"
+    );
+  }
+  75% {
+    d: path(
+      "M 0,500 L 0,291 C 263,298.5 526,306 766,306 C 1006,306 1223,298.5 1440,291 L 1440,500 L 0,500 Z"
+    );
+  }
+  100% {
+    d: path(
+      "M 0,500 L 0,291 C 265,322 530,353 770,353 C 1010,353 1225,322 1440,291 L 1440,500 L 0,500 Z"
+    );
+  }
+}
+
+/* Tailwind-style utility classes to trigger the animations */
+.animate-wave-back {
+  animation: wave-back 4s linear infinite;
+}
+
+.animate-wave-front {
+  animation: wave-front 4s linear infinite;
 }
