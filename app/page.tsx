@@ -1,4 +1,5 @@
 import { OceanWaves } from "./components/ui/OceanWaves";
+import { Boat } from "./components/ui/Boat";
 
 export default function Home() {
   return (
@@ -9,10 +10,13 @@ export default function Home() {
         <p>Building web apps with a focus on ocean themed side projects</p>
       </div>
 
-      <div>
+      <div className="relative">
         <OceanWaves />
+        <div className="absolute right-[20%] top-[53%] w-[15%] -translate-x-1/2">
+          <Boat />
+        </div>
       </div>
-      <div className="flex flex-1 bg-linear-to-b min-h-[1000px] from-[#0693E3] to-blue-950"></div>
+      <div className="flex flex-1 bg-linear-to-b min-h-[2000px] from-[#0693E3] to-blue-950"></div>
     </main>
   );
 }
