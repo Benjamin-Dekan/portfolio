@@ -1,10 +1,15 @@
 import { OceanWaves } from "./components/ui/OceanWaves";
 import { Boat } from "./components/ui/Boat";
+import { EB_Garamond } from "next/font/google";
+
+const eb_garamond = EB_Garamond({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col justify-center items-center gap-1 min-h-[50vh]">
+      <div
+        className={`${eb_garamond.className} flex flex-col justify-center items-center gap-1 min-h-[50vh]`}
+      >
         <p className="text-5xl">Benjamin Dekan</p>
         <p className="text-2xl">Frontend / full-stack developer</p>
         <p>Building web apps with a focus on ocean themed side projects</p>
