@@ -85,9 +85,9 @@ body {
 
 /* Tailwind-style utility classes to trigger the animations */
 .animate-wave-back {
-  animation: wave-back 4s linear infinite;
+  animation: wave-back 10s linear infinite;
 }
 
 .animate-wave-front {
-  animation: wave-front 4s linear infinite;
+  animation: wave-front 8s linear infinite;
 }
