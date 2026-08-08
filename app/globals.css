@@ -103,14 +103,14 @@ body {
 
 /* Tailwind-style utility classes to trigger the animations */
 .animate-wave-back {
-  animation: wave-back 10s linear infinite;
+  animation: wave-back 20s linear infinite;
 }
 
 .animate-wave-front {
-  animation: wave-front 8s linear infinite;
+  animation: wave-front 16s linear infinite;
 }
 
 .animate-boat {
-  animation: boat-rock 8s ease-in-out infinite; /* same duration as animate-wave-front */
+  animation: boat-rock 16s ease-in-out infinite; /* same duration as animate-wave-front */
   transform-origin: 50% 80%; /* pivot near the waterline, not the center of the boat */
 }
