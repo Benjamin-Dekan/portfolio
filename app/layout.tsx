@@ -25,9 +25,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header />
+        <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-md">
+          <Header />
+        </div>
 
-        <main>{children}</main>
+        <main className="relative z-10 flex-grow flex flex-col">
+          {children}
+        </main>
       </body>
     </html>
   );

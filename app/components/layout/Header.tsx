@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header>
+    <header className="relative z-50">
       <div className="flex justify-between items-center mx-8 my-4">
         <Link href="/" className="text-2xl font-semibold">
           Portfolio

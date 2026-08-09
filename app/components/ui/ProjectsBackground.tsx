@@ -152,7 +152,7 @@ export default function ProjectsBackground() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen absolute inset-0 -z-10"
+      className="w-full h-screen fixed inset-0 -z-50 pointer-events-none"
     />
   );
 }
