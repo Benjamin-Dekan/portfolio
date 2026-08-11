@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Header />
         </div>
 
-        <main className="relative z-10 grow flex flex-col">{children}</main>
+        <main className="relative z-10 flex flex-col">{children}</main>
       </body>
     </html>
   );
