@@ -1,6 +1,7 @@
 import { Fraunces } from "next/font/google";
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { WavyBackground } from "@/app/components/ui/WavyBackground";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -8,7 +9,9 @@ const fraunces = Fraunces({
 
 const ContactPage = () => {
   return (
-    <div className="px-6 min-h-[50vh] flex items-center justify-center py-6">
+    <div className="px-6 min-h-[50vh] flex items-center justify-center py-6 relative">
+      <WavyBackground />
+
       <div className="max-w-[1600px] mx-auto ring-2 ring-blue-500 bg-white inset-shadow-sm inset-shadow-blue-400 rounded-2xl px-8 py-12 md:px-16">
         <div className={`${fraunces.className} font-semibold text-4xl mb-3`}>
           Get in touch.
