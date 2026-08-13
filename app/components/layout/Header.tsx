@@ -18,7 +18,7 @@ export const Header = () => {
         >
           Portfolio
         </Link>
-        <div className="flex text-sm md:text-md gap-3">
+        <div className="flex md:text-base text-sm gap-3">
           <Button redirectLink={"/about"} textInput={"About"} />
           <Button redirectLink={"/projects"} textInput={"Projects"} />
           <Button redirectLink={"/contact"} textInput={"Contact"} />

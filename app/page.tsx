@@ -12,7 +12,7 @@ export default function Home() {
       >
         <p className="md:text-7xl text-5xl">Benjamin Dekan</p>
         <p className="md:text-3xl text-xl">Frontend / full-stack developer</p>
-        <p className="md:text-lg text-md">
+        <p className="md:text-lg text-base">
           Building web apps with a focus on ocean themed side projects
         </p>
       </div>
