@@ -1,11 +1,21 @@
 import { Button } from "../ui/Button";
 import Link from "next/link";
+import { Cormorant } from "next/font/google";
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+});
 
 export const Header = () => {
   return (
     <header className="relative z-50">
       <div className="flex justify-between items-center mx-8 my-4">
-        <Link href="/" className="text-2xl font-semibold">
+        <Link
+          href="/"
+          className={`${cormorant.className} text-3xl font-semibold`}
+        >
           Portfolio
         </Link>
         <div className="flex gap-3">

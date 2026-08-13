@@ -81,7 +81,6 @@ export default function ProjectsBackground() {
     const width = container.clientWidth;
     const height = container.clientHeight;
 
-    // Setup Three.js Scene
     const scene = new THREE.Scene();
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -89,7 +88,6 @@ export default function ProjectsBackground() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // Uniforms mapping from Godot to Three.js
     const uniforms = {
       iTime: { value: 0 },
       iResolution: { value: new THREE.Vector2(width, height) },
@@ -116,7 +114,6 @@ export default function ProjectsBackground() {
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
-    // Animation Loop
     let animationFrameId: number;
     const clock = new THREE.Clock();
 
@@ -128,7 +125,6 @@ export default function ProjectsBackground() {
 
     animate();
 
-    // Handle Resize
     const handleResize = () => {
       if (!container) return;
       const w = container.clientWidth;
