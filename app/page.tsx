@@ -10,9 +10,9 @@ export default function Home() {
       <div
         className={`${eb_garamond.className} flex flex-col justify-center items-center gap-1 min-h-[50vh]`}
       >
-        <p className="text-7xl">Benjamin Dekan</p>
-        <p className="text-3xl">Frontend / full-stack developer</p>
-        <p className="text-lg">
+        <p className="md:text-7xl text-5xl">Benjamin Dekan</p>
+        <p className="md:text-3xl text-xl">Frontend / full-stack developer</p>
+        <p className="md:text-lg text-md">
           Building web apps with a focus on ocean themed side projects
         </p>
       </div>
