@@ -8,7 +8,7 @@ const fraunces = Fraunces({
 
 const ContactPage = () => {
   return (
-    <div className="px-6 min-h-[calc(100vh-64px)] flex items-center justify-center py-6">
+    <div className="px-6 min-h-[calc(100vh-68px)] flex items-center justify-center py-6">
       <div className="max-w-[1600px] mx-auto ring-2 ring-blue-500 bg-white inset-shadow-sm inset-shadow-blue-400 rounded-2xl px-8 py-12 md:px-16">
         <div className={`${fraunces.className} font-semibold text-4xl mb-3`}>
           Get in touch.
@@ -29,7 +29,7 @@ const ContactPage = () => {
             </a>
           </div>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Benjamin-Dekan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-neutral-600 hover:text-blue-500 transition-colors w-fit"
@@ -38,7 +38,7 @@ const ContactPage = () => {
             <span className="text-base">GitHub</span>
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/benjamin-dekan-b268783a9/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-neutral-600 hover:text-blue-500 transition-colors w-fit"
