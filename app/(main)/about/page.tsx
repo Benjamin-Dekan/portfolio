@@ -26,7 +26,7 @@ const AboutPage = () => {
           <p>
             I'm fascinated by the space where physical hardware meets
             high-performance software. I like having my hands in a little bit of
-            everything—whether that's writing low-level C++ for embedded
+            everything. Whether that's writing low-level C++ for embedded
             systems, automating lab robots with Python, or building full-stack
             web apps with Next.js and TypeScript.
           </p>
