@@ -41,7 +41,7 @@ const ContactPage = () => {
             <span className="text-base">GitHub</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/benjamin-dekan-b268783a9/"
+            href="https://www.linkedin.com/in/benjamin-dekan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-neutral-600 hover:text-blue-500 transition-colors w-fit"
