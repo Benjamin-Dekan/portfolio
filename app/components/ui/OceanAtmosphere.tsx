@@ -51,7 +51,7 @@ export const OceanAtmosphere = () => {
       />
 
       {/* Anchor Cable / Telemetry Depth Line running the whole vertical height on desktop */}
-      <div className="hidden lg:block absolute left-12 top-[1150px] bottom-30 w-[2px]">
+      <div className="hidden lg:block absolute left-12 top-[1450px] bottom-30 w-[2px]">
         {/* Glowing dashed wire */}
         <div
           className="w-full h-full"
