@@ -30,6 +30,19 @@ html {
   scroll-behavior: smooth;
   background-color: #030712;
   color: #e8f1ff;
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 body {
