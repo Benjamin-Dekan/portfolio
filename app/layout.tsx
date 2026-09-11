@@ -1,35 +1,44 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { VT323, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/layout/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const vt323 = VT323({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-vt323",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Benjamin Dekan | Portfolio",
-  description: "Frontend / full-stack developer.",
+  title: "Benjamin Dekan · The Ocean Expedition",
+  description:
+    "Computer Engineering graduate & full-stack developer from Boston University. Ocean-themed systems, embedded firmware, and modern web applications.",
+  icons: {
+    icon: "/cartoon-boat.svg",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${vt323.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-md">
-          <Header />
-        </div>
-
-        <main className="relative z-10 flex flex-col">{children}</main>
+      <body className="min-h-full flex flex-col bg-[#030712] text-[#e8f1ff] selection:bg-[#4de3ff] selection:text-[#050a14] relative">
+        <div className="crt-overlay" aria-hidden="true" />
+        <Header />
+        <main className="relative z-10 flex-1 flex flex-col">{children}</main>
       </body>
     </html>
   );
