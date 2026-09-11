@@ -1,45 +1,79 @@
-import { Fraunces } from "next/font/google";
-import { WavyBackground } from "@/app/components/ui/WavyBackground";
+"use client";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-});
+import Link from "next/link";
+import { Terminal, ArrowLeft } from "lucide-react";
+import { FathomMarker } from "@/app/components/ui/FathomMarker";
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <div className="px-6 min-h-[50vh] flex items-center justify-center py-6 relative w-full">
-      <WavyBackground />
+    <div className="min-h-[85vh] px-6 py-12 flex flex-col items-center justify-center max-w-4xl mx-auto w-full">
+      <div className="w-full mb-6">
+        <Link
+          href="/"
+          className="font-mono text-xs text-[#7d93b8] hover:text-[#4de3ff] uppercase tracking-widest inline-flex items-center gap-2 transition-colors"
+        >
+          <ArrowLeft size={14} />
+          <span>RETURN TO SURFACE DECK</span>
+        </Link>
+      </div>
 
-      {/* Changed max-w-[1600px] to max-w-3xl for a better reading width, and added relative z-10 to ensure it sits above the wavy background */}
-      <div className="relative z-10 max-w-3xl mx-auto ring-2 ring-blue-500 bg-white inset-shadow-sm inset-shadow-blue-400 rounded-2xl px-8 py-12 md:px-16">
-        <h1 className={`${fraunces.className} font-semibold text-4xl mb-6`}>
-          About Me.
-        </h1>
+      <FathomMarker
+        depth="4000m"
+        zone="Bathypelagic Zone"
+        tagline="Expedition Logbook"
+      />
 
-        {/* Removed max-w-md. Added space-y-5 to handle the spacing between paragraphs automatically, and increased line-height for readability */}
-        <div className="text-neutral-600 space-y-5 leading-relaxed text-lg">
+      <div className="w-full bg-[#050b17]/90 border-2 border-[#1b3050] hover:border-[#4de3ff] rounded-sm p-8 md:p-12 shadow-[0_0_30px_rgba(2,6,15,0.9)] backdrop-blur-md transition-colors relative mt-4">
+        <div className="flex items-center justify-between border-b border-[#1b3050] pb-4 mb-6">
+          <div className="flex items-center gap-2">
+            <Terminal size={18} className="text-[#4de3ff]" />
+            <h1 className="font-mono text-xl uppercase tracking-widest text-[#e8f1ff] font-bold">
+              ABOUT BENJAMIN DEKAN
+            </h1>
+          </div>
+          <span className="font-mono text-xs text-[#7d93b8]">
+            BU ALUMNUS // COMPUTER ENGINEERING
+          </span>
+        </div>
+
+        <div className="space-y-6 text-[#c6d5ec] leading-relaxed text-base md:text-lg">
           <p>
-            Hi, I'm Benjamin. I recently graduated from Boston University with a
-            degree in Computer Engineering.
+            Hi, I&apos;m <span className="text-[#4de3ff] font-semibold">Benjamin</span>. I
+            recently graduated from{" "}
+            <span className="text-[#e8f1ff] font-semibold">Boston University</span> with
+            a degree in Computer Engineering.
           </p>
 
           <p>
-            I'm fascinated by the space where physical hardware meets
+            I&apos;m fascinated by the space where physical hardware meets
             high-performance software. I like having my hands in a little bit of
-            everything. Whether that's writing low-level C++ for embedded
+            everything. Whether that&apos;s writing low-level C++ for embedded
             systems, automating lab robots with Python, or building full-stack
-            web apps with Next.js and TypeScript.
+            web apps with Next.js, React, and TypeScript.
           </p>
 
           <p>
-            When I'm not in an IDE, you can usually find me tinkering with FPGA
+            When I&apos;m not in an IDE, you can usually find me tinkering with FPGA
             designs, exploring browser security internals, or just spending time
             by the ocean.
           </p>
         </div>
+
+        <div className="mt-8 pt-6 border-t border-dashed border-[#1b3050] flex flex-wrap gap-4 justify-between items-center font-mono text-xs">
+          <div className="text-[#7d93b8]">
+            LOOKING FOR:{" "}
+            <span className="text-[#4de3ff] font-bold">
+              FULL-TIME SOFTWARE / EMBEDDED ROLES
+            </span>
+          </div>
+          <Link
+            href="/#hadal"
+            className="btn-descend py-2 px-5 text-xs shadow-[0_0_12px_rgba(255,93,143,0.4)]"
+          >
+            GET IN TOUCH ↓
+          </Link>
+        </div>
       </div>
     </div>
   );
-};
-
-export default AboutPage;
+}
