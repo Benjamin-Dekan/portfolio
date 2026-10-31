@@ -2,8 +2,10 @@
 
 @theme {
   --font-vt323: var(--font-vt323), monospace;
-  --font-inter: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  
+  --font-inter:
+    var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+
   --color-abyss: #030712;
   --color-shallow: #0d1e38;
   --color-foam: #e8f1ff;
@@ -59,22 +61,38 @@ body {
   inset: 0;
   z-index: 99;
   opacity: 0.28;
-  background: 
-    radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0) 65%, rgba(2, 5, 12, 0.85) 100%),
-    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0 1px, transparent 1px 3px);
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(2, 5, 12, 0.85) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.35) 0 1px,
+      transparent 1px 3px
+    );
 }
 
 /* Text chromatic aberration glow (Krillion style) */
 .krillion-glow {
-  text-shadow: -2px 2px #ff5d8fa6, 2px -2px #4de3ffcc, 0 0 16px #4de3ff4d;
+  text-shadow:
+    -2px 2px #ff5d8fa6,
+    2px -2px #4de3ffcc,
+    0 0 16px #4de3ff4d;
 }
 
 .krillion-glow-pink {
-  text-shadow: -2px 2px #4de3ffa6, 2px -2px #ff5d8fcc, 0 0 16px #ff5d8f4d;
+  text-shadow:
+    -2px 2px #4de3ffa6,
+    2px -2px #ff5d8fcc,
+    0 0 16px #ff5d8f4d;
 }
 
 .krillion-glow-gold {
-  text-shadow: 0 0 12px #ffd16688, 2px 2px 0 #000;
+  text-shadow:
+    0 0 12px #ffd16688,
+    2px 2px 0 #000;
 }
 
 /* Retro Pixel Bevel Buttons */
@@ -84,15 +102,33 @@ body {
   letter-spacing: 0.16em;
   color: #050a14;
   clip-path: polygon(
-    0 8px, 4px 8px, 4px 4px, 8px 4px, 8px 0,
-    calc(100% - 8px) 0, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, 100% 8px,
-    100% calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) 100%,
-    8px 100%, 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 0 calc(100% - 8px)
+    0 8px,
+    4px 8px,
+    4px 4px,
+    8px 4px,
+    8px 0,
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 8px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    8px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 8px),
+    0 calc(100% - 8px)
   );
   border: none;
   background: linear-gradient(180deg, #ffa3bf 0%, #ff5d8f 12%, #cf3a6b 100%);
   filter: drop-shadow(0 0 12px rgba(255, 93, 143, 0.45));
-  transition: transform 0.08s steps(2, end), filter 0.15s ease-in-out;
+  transition:
+    transform 0.08s steps(2, end),
+    filter 0.15s ease-in-out;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -116,15 +152,33 @@ body {
   letter-spacing: 0.16em;
   color: #050a14;
   clip-path: polygon(
-    0 8px, 4px 8px, 4px 4px, 8px 4px, 8px 0,
-    calc(100% - 8px) 0, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, 100% 8px,
-    100% calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) 100%,
-    8px 100%, 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 0 calc(100% - 8px)
+    0 8px,
+    4px 8px,
+    4px 4px,
+    8px 4px,
+    8px 0,
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 8px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    8px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 8px),
+    0 calc(100% - 8px)
   );
   border: none;
   background: linear-gradient(180deg, #a3f3ff 0%, #4de3ff 12%, #18a9c7 100%);
   filter: drop-shadow(0 0 12px rgba(77, 227, 255, 0.45));
-  transition: transform 0.08s steps(2, end), filter 0.15s ease-in-out;
+  transition:
+    transform 0.08s steps(2, end),
+    filter 0.15s ease-in-out;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -143,10 +197,26 @@ body {
   letter-spacing: 0.14em;
   color: var(--color-drift);
   clip-path: polygon(
-    0 6px, 3px 6px, 3px 3px, 6px 3px, 6px 0,
-    calc(100% - 6px) 0, calc(100% - 6px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 6px, 100% 6px,
-    100% calc(100% - 6px), calc(100% - 3px) calc(100% - 6px), calc(100% - 3px) calc(100% - 3px), calc(100% - 6px) calc(100% - 3px), calc(100% - 6px) 100%,
-    6px 100%, 6px calc(100% - 3px), 3px calc(100% - 3px), 3px calc(100% - 6px), 0 calc(100% - 6px)
+    0 6px,
+    3px 6px,
+    3px 3px,
+    6px 3px,
+    6px 0,
+    calc(100% - 6px) 0,
+    calc(100% - 6px) 3px,
+    calc(100% - 3px) 3px,
+    calc(100% - 3px) 6px,
+    100% 6px,
+    100% calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 3px),
+    calc(100% - 6px) 100%,
+    6px 100%,
+    6px calc(100% - 3px),
+    3px calc(100% - 3px),
+    3px calc(100% - 6px),
+    0 calc(100% - 6px)
   );
   background: linear-gradient(180deg, #1b2d49 0%, #0e192a 10%, #080f1b 100%);
   border: none;
@@ -161,7 +231,9 @@ body {
 
 .btn-quiet:hover {
   color: #4de3ff;
-  box-shadow: inset 0 0 0 1px #4de3ff80, 0 0 12px rgba(77, 227, 255, 0.25);
+  box-shadow:
+    inset 0 0 0 1px #4de3ff80,
+    0 0 12px rgba(77, 227, 255, 0.25);
   transform: translateY(-1px);
 }
 
@@ -169,12 +241,19 @@ body {
 .pack-card {
   background: #0b1626e8;
   backdrop-filter: blur(8px);
-  box-shadow: 0 0 0 2px #040914, 0 0 0 4px #1b3050;
-  transition: transform 0.22s ease-out, box-shadow 0.22s ease-out;
+  box-shadow:
+    0 0 0 2px #040914,
+    0 0 0 4px #1b3050;
+  transition:
+    transform 0.22s ease-out,
+    box-shadow 0.22s ease-out;
 }
 
 .pack-card:hover {
-  box-shadow: 0 0 0 2px #040914, 0 0 0 4px #4de3ff, 0 0 24px rgba(77, 227, 255, 0.25);
+  box-shadow:
+    0 0 0 2px #040914,
+    0 0 0 4px #4de3ff,
+    0 0 24px rgba(77, 227, 255, 0.25);
   transform: translateY(-3px);
 }
 
