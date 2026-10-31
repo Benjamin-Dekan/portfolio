@@ -4,3 +4,4 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - caniuse-lite
+  - tslib@2.9.1
